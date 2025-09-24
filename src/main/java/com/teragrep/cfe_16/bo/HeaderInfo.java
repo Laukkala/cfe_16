@@ -50,6 +50,14 @@ import java.util.Objects;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @class HeaderInfo
+ * @brief headerInfo provides information about HTTP headers
+ * @collaborators - XForwardedFor - XForwardedHost - XForwardedProto
+ * @startuml class HeaderInfo { + asSDElement() } Dog --> Cat : fluffiness note right of Dog Responsibilities: - Very
+ *           fluffy Collaborators: - Cat end note
+ * @enduml
+ */
 public final class HeaderInfo {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(HeaderInfo.class);
