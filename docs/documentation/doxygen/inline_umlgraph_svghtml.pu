@@ -3,6 +3,16 @@
           + getAckList() + getCurrentAckValue() }
 @enduml
 @startuml inline_umlgraph_2.svg
+  + cleanAckRequestBody(String body, String channel)
+}
+
+note right of RequestBodyCleaner
+Responsibilities:
+- Formats bodies of Requests by removing channel field
+Collaborators:
+end note
+@enduml
+@startuml inline_umlgraph_3.svg
 class HeaderInfo {
   + asSDElement()
 }
@@ -25,6 +35,21 @@ Collaborators:
 
 end note
 @enduml
-@startuml inline_umlgraph_3.svg
+@startuml inline_umlgraph_4.svg
 }
+
+HECRestController --> HECService : Delegation of requests
+HECRestController --> RequestBodyCleaner : Formatting of requests
+
+note right of HECRestController
+Responsibilities:
+ - Implements REST API endpoints.
+ - Accepts HTTPServlet reqeuests.
+ - Cleans Requests via RequestBodyCleaner and delegates them to HECService
+ - Logs the time elapsed while handling requests.
+
+Collaborators:
+- RequestBodyCleaner
+- HECService
+end note
 @enduml

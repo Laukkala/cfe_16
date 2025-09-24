@@ -140,40 +140,43 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * TODO: Try to implement a better way to get the body of the request.</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>@Component</div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="};">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html">   61</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html">RequestBodyCleaner</a> {</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a8c50916e2c909c0572f6ede5759bb716">   63</a></span>    <span class="keyword">public</span> String <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a8c50916e2c909c0572f6ede5759bb716">cleanAckRequestBody</a>(String body, String channel) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        String bodyWithoutChannel = body.replaceAll(<span class="stringliteral">&quot;channel=\\[&quot;</span> + Pattern.quote(channel) + <span class="stringliteral">&quot;\\]\\, &quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        String bodywithoutChannelLastCharRemoved = <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9d4bd53181a791719c7da3729cc72f7f">removeLastChar</a>(bodyWithoutChannel);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        String cleanedBody = bodywithoutChannelLastCharRemoved.substring(1);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        cleanedBody = <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9b772b8ac07b66a3440a00f2b7ecf627">removeEqualsArrayFromEnd</a>(cleanedBody);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> cleanedBody;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// spotless:off</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">// spotless:on</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>@Component</div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="};">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html">   80</a></span><span class="keyword">public</span> <span class="keyword">class </span><a class="code hl_class" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html">RequestBodyCleaner</a> {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a8c50916e2c909c0572f6ede5759bb716">   82</a></span>    <span class="keyword">public</span> String <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a8c50916e2c909c0572f6ede5759bb716">cleanAckRequestBody</a>(String body, String channel) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        String bodyWithoutChannel = body.replaceAll(<span class="stringliteral">&quot;channel=\\[&quot;</span> + Pattern.quote(channel) + <span class="stringliteral">&quot;\\]\\, &quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        String bodywithoutChannelLastCharRemoved = <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9d4bd53181a791719c7da3729cc72f7f">removeLastChar</a>(bodyWithoutChannel);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        String cleanedBody = bodywithoutChannelLastCharRemoved.substring(1);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        cleanedBody = <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9b772b8ac07b66a3440a00f2b7ecf627">removeEqualsArrayFromEnd</a>(cleanedBody);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> cleanedBody;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
 </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9d4bd53181a791719c7da3729cc72f7f">   74</a></span>    <span class="keyword">private</span> String <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9d4bd53181a791719c7da3729cc72f7f">removeLastChar</a>(String str) {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">return</span> str.substring(0, str.length() - 1);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9d4bd53181a791719c7da3729cc72f7f">   93</a></span>    <span class="keyword">private</span> String <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9d4bd53181a791719c7da3729cc72f7f">removeLastChar</a>(String str) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keywordflow">return</span> str.substring(0, str.length() - 1);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
 </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="foldopen" id="foldopen00078" data-start="{" data-end="}">
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9b772b8ac07b66a3440a00f2b7ecf627">   78</a></span>    <span class="keyword">private</span> String <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9b772b8ac07b66a3440a00f2b7ecf627">removeEqualsArrayFromEnd</a>(String str) {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span> str.replace(<span class="stringliteral">&quot;=[]&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9b772b8ac07b66a3440a00f2b7ecf627">   97</a></span>    <span class="keyword">private</span> String <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9b772b8ac07b66a3440a00f2b7ecf627">removeEqualsArrayFromEnd</a>(String str) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keywordflow">return</span> str.replace(<span class="stringliteral">&quot;=[]&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    }</div>
 </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
 </div>
-<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner_html"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html">com.teragrep.cfe_16.RequestBodyCleaner</a></div><div class="ttdef"><b>Definition</b> <a href="RequestBodyCleaner_8java_source.html#l00061">RequestBodyCleaner.java:61</a></div></div>
-<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner_html_a8c50916e2c909c0572f6ede5759bb716"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a8c50916e2c909c0572f6ede5759bb716">com.teragrep.cfe_16.RequestBodyCleaner.cleanAckRequestBody</a></div><div class="ttdeci">String cleanAckRequestBody(String body, String channel)</div><div class="ttdef"><b>Definition</b> <a href="RequestBodyCleaner_8java_source.html#l00063">RequestBodyCleaner.java:63</a></div></div>
-<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner_html_a9b772b8ac07b66a3440a00f2b7ecf627"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9b772b8ac07b66a3440a00f2b7ecf627">com.teragrep.cfe_16.RequestBodyCleaner.removeEqualsArrayFromEnd</a></div><div class="ttdeci">String removeEqualsArrayFromEnd(String str)</div><div class="ttdef"><b>Definition</b> <a href="RequestBodyCleaner_8java_source.html#l00078">RequestBodyCleaner.java:78</a></div></div>
-<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner_html_a9d4bd53181a791719c7da3729cc72f7f"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9d4bd53181a791719c7da3729cc72f7f">com.teragrep.cfe_16.RequestBodyCleaner.removeLastChar</a></div><div class="ttdeci">String removeLastChar(String str)</div><div class="ttdef"><b>Definition</b> <a href="RequestBodyCleaner_8java_source.html#l00074">RequestBodyCleaner.java:74</a></div></div>
+<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner_html"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html">com.teragrep.cfe_16.RequestBodyCleaner</a></div><div class="ttdef"><b>Definition</b> <a href="RequestBodyCleaner_8java_source.html#l00080">RequestBodyCleaner.java:80</a></div></div>
+<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner_html_a8c50916e2c909c0572f6ede5759bb716"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a8c50916e2c909c0572f6ede5759bb716">com.teragrep.cfe_16.RequestBodyCleaner.cleanAckRequestBody</a></div><div class="ttdeci">String cleanAckRequestBody(String body, String channel)</div><div class="ttdef"><b>Definition</b> <a href="RequestBodyCleaner_8java_source.html#l00082">RequestBodyCleaner.java:82</a></div></div>
+<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner_html_a9b772b8ac07b66a3440a00f2b7ecf627"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9b772b8ac07b66a3440a00f2b7ecf627">com.teragrep.cfe_16.RequestBodyCleaner.removeEqualsArrayFromEnd</a></div><div class="ttdeci">String removeEqualsArrayFromEnd(String str)</div><div class="ttdef"><b>Definition</b> <a href="RequestBodyCleaner_8java_source.html#l00097">RequestBodyCleaner.java:97</a></div></div>
+<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner_html_a9d4bd53181a791719c7da3729cc72f7f"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9d4bd53181a791719c7da3729cc72f7f">com.teragrep.cfe_16.RequestBodyCleaner.removeLastChar</a></div><div class="ttdeci">String removeLastChar(String str)</div><div class="ttdef"><b>Definition</b> <a href="RequestBodyCleaner_8java_source.html#l00093">RequestBodyCleaner.java:93</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

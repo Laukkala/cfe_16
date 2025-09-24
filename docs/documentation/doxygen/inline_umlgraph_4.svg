@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="292px" preserveAspectRatio="none" style="width:797px;height:292px;" version="1.1" viewBox="0 0 797 292" width="797px" zoomAndPan="magnify"><defs><filter height="300%" id="fhtsic99bwfoo" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#fhtsic99bwfoo)" height="50" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="148" x="74.5" y="56"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="74.5" x2="222.5" y1="82.2969" y2="82.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="128" x="84.5" y="73.9951">HECRestController</text><rect fill="#FEFECE" filter="url(#fhtsic99bwfoo)" height="50" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="99" x="6" y="231"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="6" x2="105" y1="257.2969" y2="257.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="79" x="16" y="248.9951">HECService</text><rect fill="#FEFECE" filter="url(#fhtsic99bwfoo)" height="50" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="167" x="159" y="231"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="159" x2="326" y1="257.2969" y2="257.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="147" x="169" y="248.9951">RequestBodyCleaner</text><path d="M258,8 L258,77 L222.81,81 L258,85 L258,154.1953 A0,0 0 0 0 258,154.1953 L785,154.1953 A0,0 0 0 0 785,154.1953 L785,18 L775,8 L258,8 A0,0 0 0 0 258,8 " fill="#FBFB77" filter="url(#fhtsic99bwfoo)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M775,8 L775,18 L785,18 L775,8 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="101" x="264" y="25.0669">Responsibilities:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="216" x="268" y="40.1997">- Implements REST API endpoints.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="213" x="268" y="55.3325">- Accepts HTTPServlet reqeuests.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="502" x="268" y="70.4653">- Cleans Requests via RequestBodyCleaner and delegates them to HECService</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="308" x="268" y="85.5981">- Logs the time elapsed while handling requests.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="268" y="100.731"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="89" x="264" y="115.8638">Collaborators:</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="142" x="264" y="130.9966">- RequestBodyCleaner</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="83" x="264" y="146.1294">- HECService</text><!--MD5=[3b022c93c57d858bf8f83fa1335789fe]
+link HECRestController to HECService--><path d="M114.96,106.36 C92.58,124.81 65.05,152.35 52.5,184 C47.32,197.06 47.34,212.55 48.96,225.73 " fill="none" id="HECRestController-&gt;HECService" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="49.69,230.84,52.3923,221.3691,48.9909,225.8891,44.4709,222.4877,49.69,230.84" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="145" x="53.5" y="197.0669">Delegation of requests</text><!--MD5=[b106053840f8e6d4cec3747fd6ebf365]
+link HECRestController to RequestBodyCleaner--><path d="M161.57,106.05 C178.64,137.47 208.49,192.41 226.78,226.07 " fill="none" id="HECRestController-&gt;RequestBodyCleaner" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="229.39,230.87,228.6165,221.0516,227.0067,226.4745,221.5838,224.8648,229.39,230.87" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="146" x="212.5" y="197.0669">Formatting of requests</text><!--MD5=[d3f72105431b4423ee1c2ae3bda3229f]
+@startuml inline_umlgraph_4.svg
+}
+
+HECRestController - -> HECService : Delegation of requests
+HECRestController - -> RequestBodyCleaner : Formatting of requests
+
+note right of HECRestController
+Responsibilities:
+ - Implements REST API endpoints.
+ - Accepts HTTPServlet reqeuests.
+ - Cleans Requests via RequestBodyCleaner and delegates them to HECService
+ - Logs the time elapsed while handling requests.
+
+Collaborators:
+- RequestBodyCleaner
+- HECService
+end note
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 10:22:07 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 17.0.14+7
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
