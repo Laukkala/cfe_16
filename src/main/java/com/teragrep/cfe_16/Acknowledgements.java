@@ -64,35 +64,13 @@ import java.util.Map;
 
 /**
  * @class Acknowledgements
- * @brief Handles the acknowledgement statuses of the sent events (acks).
- * A background thread is used to clean up NRU ACK objects.
- * 
- * This class is thread safe.
- *
- * @responsibilities
- * - Keeps states of Ack objects in a collection
- *
+ * @brief Handles the acknowledgement statuses of the sent events (acks). A background thread is used to clean up NRU
+ *        ACK objects. This class is thread safe.
+ * @responsibilities - Keeps states of Ack objects in a collection
  * @collaborators
- *
- *
- * @startuml
- * class Acknowledgements {
- *   + start()
- *   + stop()
- *   + initializeContext()
- *   + incrementAckValue()
- *   + acknowledge()
- *   + addAck()
- *   + isAckAcknowledged()
- *   + getRequestedAckStatuses()
- *   + deleteAckFromList()
- *   + run()
- *   + getAckListSize()
- *   + getAckList()
- *   + getCurrentAckValue()
- *
- *
- * }
+ * @startuml class Acknowledgements { + start() + stop() + initializeContext() + incrementAckValue() + acknowledge() +
+ *           addAck() + isAckAcknowledged() + getRequestedAckStatuses() + deleteAckFromList() + run() + getAckListSize()
+ *           + getAckList() + getCurrentAckValue() }
  * @enduml
  */
 @Component
