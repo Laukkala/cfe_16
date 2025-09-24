@@ -73,6 +73,21 @@ import org.springframework.web.bind.annotation.*;
  * @startuml class HECRestController {
  *
  * }
+ *
+ * HECRestController --> HECService : Delegation of requests
+ * HECRestController --> RequestBodyCleaner : Formatting of requests
+ *
+ * note right of HECRestController
+ * Responsibilities:
+ *  - Implements REST API endpoints.
+ *  - Accepts HTTPServlet reqeuests.
+ *  - Cleans Requests via RequestBodyCleaner and delegates them to HECService
+ *  - Logs the time elapsed while handling requests.
+ *
+ * Collaborators:
+ * - RequestBodyCleaner
+ * - HECService
+ * end note
  * @enduml
  */
 // spotless:on
