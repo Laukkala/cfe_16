@@ -119,6 +119,7 @@ Collaborators:
 end note
 @enduml
 @startuml inline_umlgraph_8.svg
+interface HECService {
     sendEvents()
     getAcks()
     healthCheck()
