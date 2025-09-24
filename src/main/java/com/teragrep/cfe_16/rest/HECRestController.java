@@ -63,13 +63,13 @@ import org.springframework.web.bind.annotation.*;
 /**
  * @class HECRestController
  * @responsibilities
- *        - Implements REST API endpoints.
- *        - Accepts HTTPServlet reqeuests.
- *        - Cleans Requests via RequestBodyCleaner and delegates them to HECService
- *        - Logs the time elapsed while handling requests.
+ * - Implements REST API endpoints.
+ * - Accepts HTTPServlet reqeuests.
+ * - Cleans Requests via RequestBodyCleaner and delegates them to HECService
+ * - Logs the time elapsed while handling requests.
  * @collaborators
- *        - RequestBodyCleaner
- *        - HECService
+ * - RequestBodyCleaner
+ * - HECService
  * @startuml
  * class HECRestController {
  *   + sendEvents()
