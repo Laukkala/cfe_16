@@ -45,6 +45,39 @@
  */
 package com.teragrep.cfe_16.bo;
 
+// spotless:off
+/**
+ * @class XForwardedHostStub
+ * @brief XForwardedHostStub tells others that the optional HTTP header was not found
+ *
+ * @responsibilities
+ * - Throw an exception if value is asked for
+ * - Tell others that it is a stub object
+ *
+ * @collaborators
+ * - HeaderInfo
+ *
+ * @startuml
+ * class XForwardedHostStub {
+ *   + isStub()
+ *   + value()
+ * }
+ *
+ * XForwardedHostStub --> HeaderInfo : Tell that it is a stub
+ *
+ * note right of XForwardedHostStub
+ * Responsibilities:
+ * - Throw an exception if value is asked for
+ * - Tell others that it is a stub object
+ *
+ * Collaborators:
+ * - HeaderInfo
+ *
+ * end note
+ *
+ * @enduml
+ */
+// spotless:on
 public final class XForwardedHostStub implements XForwardedHost {
 
     @Override
