@@ -70,6 +70,7 @@ import java.util.Objects;
  * note right of XForwardedHostImpl
  * Responsibilities:
  * - Provide value of the HTTP header
+ * - Tell others that it is not a stub object
  *
  * Collaborators:
  * - HeaderInfo
