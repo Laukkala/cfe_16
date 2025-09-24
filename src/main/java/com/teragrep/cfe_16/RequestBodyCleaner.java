@@ -66,7 +66,7 @@ import java.util.regex.Pattern;
  * @collaborators
  * @startuml
  * class RequestBodyCleaner {
- *   + cleanAckRequestBody(String body, String channel)
+ *   + cleanAckRequestBody()
  * }
  *
  * note right of RequestBodyCleaner

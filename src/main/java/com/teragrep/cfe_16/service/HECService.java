@@ -55,16 +55,16 @@ import org.springframework.http.ResponseEntity;
  * @class HECService
  * @brief An interface that specified the REST back end API.
  * @responsibilities
- *        - Defines interface for functionality of HECRestController endpoints
- *        - Defines interface for a health check
- *        - Defines interface for getting Acks for a Channel
+ * - Defines interface for functionality of HECRestController endpoints
+ * - Defines interface for a health check
+ * - Defines interface for getting Acks for a Channel
  * @collaborators
- *        - HECServiceImpl
+ * - HECServiceImpl
  * @startuml
  * interface HECService {
- *     sendEvents()
- *     getAcks()
- *     healthCheck()
+ *   sendEvents()
+ *   getAcks()
+ *   healthCheck()
  * }
  *
  * HECRestController --> HECService : Sends formatted Requests
@@ -72,9 +72,9 @@ import org.springframework.http.ResponseEntity;
  *
  * note right of HECService
  * Responsibilities:
- *        - Defines interface for functionality of HECRestController endpoints
- *        - Defines interface for a health check
- *        - Defines interface for getting Acks for a Channel
+ * - Defines interface for functionality of HECRestController endpoints
+ * - Defines interface for a health check
+ * - Defines interface for getting Acks for a Channel
  *
  * Collaborators:
  * - HECServiceImpl
