@@ -117,6 +117,10 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>headerInfo provides information about HTTP headers as Syslog Element </p>
+<dl class="section user"><dt>Responsibilities:</dt><dd><ul>
+<li>Provide a Syslog Element of HTTP headers</li>
+</ul>
+</dd></dl>
 <dl class="section user"><dt>Collaborators:</dt><dd><ul>
 <li>XForwardedFor</li>
 <li>XForwardedHost</li>
@@ -128,7 +132,7 @@ Static Private Attributes</h2></td></tr>
 <object type="image/svg+xml" data="inline_umlgraph_3.svg"></object>
 </div>
  
-<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00090">90</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00093">93</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab3fa314935c77656287fae50ab802ac8" name="ab3fa314935c77656287fae50ab802ac8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab3fa314935c77656287fae50ab802ac8">&#9670;&#160;</a></span>HeaderInfo()</h2>
@@ -162,15 +166,15 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00097">97</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  101</span>      {</div>
-<div class="line"><span class="lineno">  102</span>        this.xForwardedFor = <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#af46ec4b9013f4d272a3f3f6fdfb316d0">xForwardedFor</a>;</div>
-<div class="line"><span class="lineno">  103</span>        this.xForwardedHost = <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#aeabb7dd8d44099f078387667fa5d87dc">xForwardedHost</a>;</div>
-<div class="line"><span class="lineno">  104</span>        this.xForwardedProto = <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a9593afd0e628d32ff5819d6d9087643d">xForwardedProto</a>;</div>
-<div class="line"><span class="lineno">  105</span>    }</div>
-<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo_html_a9593afd0e628d32ff5819d6d9087643d"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a9593afd0e628d32ff5819d6d9087643d">com.teragrep.cfe_16.bo.HeaderInfo.xForwardedProto</a></div><div class="ttdeci">final XForwardedProto xForwardedProto</div><div class="ttdef"><b>Definition</b> <a href="HeaderInfo_8java_source.html#l00095">HeaderInfo.java:95</a></div></div>
-<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo_html_aeabb7dd8d44099f078387667fa5d87dc"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#aeabb7dd8d44099f078387667fa5d87dc">com.teragrep.cfe_16.bo.HeaderInfo.xForwardedHost</a></div><div class="ttdeci">final XForwardedHost xForwardedHost</div><div class="ttdef"><b>Definition</b> <a href="HeaderInfo_8java_source.html#l00094">HeaderInfo.java:94</a></div></div>
-<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo_html_af46ec4b9013f4d272a3f3f6fdfb316d0"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#af46ec4b9013f4d272a3f3f6fdfb316d0">com.teragrep.cfe_16.bo.HeaderInfo.xForwardedFor</a></div><div class="ttdeci">final XForwardedFor xForwardedFor</div><div class="ttdef"><b>Definition</b> <a href="HeaderInfo_8java_source.html#l00093">HeaderInfo.java:93</a></div></div>
+<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00100">100</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  104</span>      {</div>
+<div class="line"><span class="lineno">  105</span>        this.xForwardedFor = <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#af46ec4b9013f4d272a3f3f6fdfb316d0">xForwardedFor</a>;</div>
+<div class="line"><span class="lineno">  106</span>        this.xForwardedHost = <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#aeabb7dd8d44099f078387667fa5d87dc">xForwardedHost</a>;</div>
+<div class="line"><span class="lineno">  107</span>        this.xForwardedProto = <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a9593afd0e628d32ff5819d6d9087643d">xForwardedProto</a>;</div>
+<div class="line"><span class="lineno">  108</span>    }</div>
+<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo_html_a9593afd0e628d32ff5819d6d9087643d"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a9593afd0e628d32ff5819d6d9087643d">com.teragrep.cfe_16.bo.HeaderInfo.xForwardedProto</a></div><div class="ttdeci">final XForwardedProto xForwardedProto</div><div class="ttdef"><b>Definition</b> <a href="HeaderInfo_8java_source.html#l00098">HeaderInfo.java:98</a></div></div>
+<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo_html_aeabb7dd8d44099f078387667fa5d87dc"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#aeabb7dd8d44099f078387667fa5d87dc">com.teragrep.cfe_16.bo.HeaderInfo.xForwardedHost</a></div><div class="ttdeci">final XForwardedHost xForwardedHost</div><div class="ttdef"><b>Definition</b> <a href="HeaderInfo_8java_source.html#l00097">HeaderInfo.java:97</a></div></div>
+<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo_html_af46ec4b9013f4d272a3f3f6fdfb316d0"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#af46ec4b9013f4d272a3f3f6fdfb316d0">com.teragrep.cfe_16.bo.HeaderInfo.xForwardedFor</a></div><div class="ttdeci">final XForwardedFor xForwardedFor</div><div class="ttdef"><b>Definition</b> <a href="HeaderInfo_8java_source.html#l00096">HeaderInfo.java:96</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -190,27 +194,27 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00107">107</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  107</span>                                   {</div>
-<div class="line"><span class="lineno">  108</span>        <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a7b98ddc4360bae4f7a8bdead6dbfd0b5">LOGGER</a>.debug(<span class="stringliteral">&quot;Setting Structured Data headers&quot;</span>);</div>
-<div class="line"><span class="lineno">  109</span>        <span class="keyword">final</span> SDElement headerSDE = <span class="keyword">new</span> SDElement(<span class="stringliteral">&quot;cfe_16-origin@48577&quot;</span>);</div>
-<div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">if</span> (!this.<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#af46ec4b9013f4d272a3f3f6fdfb316d0">xForwardedFor</a>.<a class="code hl_function" href="interfacecom_1_1teragrep_1_1cfe__16_1_1Stubable.html#a8e854db1814eeb807cd9049776c33923">isStub</a>()) {</div>
-<div class="line"><span class="lineno">  112</span>            <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a7b98ddc4360bae4f7a8bdead6dbfd0b5">LOGGER</a>.debug(<span class="stringliteral">&quot;Adding X-Forwarded-For header to headerSDE&quot;</span>);</div>
-<div class="line"><span class="lineno">  113</span>            headerSDE.addSDParam(<span class="stringliteral">&quot;X-Forwarded-For&quot;</span>, this.<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#af46ec4b9013f4d272a3f3f6fdfb316d0">xForwardedFor</a>.<a class="code hl_function" href="interfacecom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedFor.html#a113b5e3c48eba97ef47b0dbcb64ef592">value</a>());</div>
-<div class="line"><span class="lineno">  114</span>        }</div>
-<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">if</span> (!this.<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#aeabb7dd8d44099f078387667fa5d87dc">xForwardedHost</a>.<a class="code hl_function" href="interfacecom_1_1teragrep_1_1cfe__16_1_1Stubable.html#a8e854db1814eeb807cd9049776c33923">isStub</a>()) {</div>
-<div class="line"><span class="lineno">  116</span>            <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a7b98ddc4360bae4f7a8bdead6dbfd0b5">LOGGER</a>.debug(<span class="stringliteral">&quot;Adding X-Forwarder-Host to headerSDE&quot;</span>);</div>
-<div class="line"><span class="lineno">  117</span>            headerSDE.addSDParam(<span class="stringliteral">&quot;X-Forwarded-Host&quot;</span>, this.<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#aeabb7dd8d44099f078387667fa5d87dc">xForwardedHost</a>.<a class="code hl_function" href="interfacecom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedHost.html#af36e894a4b77acf609737e584479e182">value</a>());</div>
-<div class="line"><span class="lineno">  118</span>        }</div>
-<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">if</span> (!this.<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a9593afd0e628d32ff5819d6d9087643d">xForwardedProto</a>.<a class="code hl_function" href="interfacecom_1_1teragrep_1_1cfe__16_1_1Stubable.html#a8e854db1814eeb807cd9049776c33923">isStub</a>()) {</div>
-<div class="line"><span class="lineno">  120</span>            <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a7b98ddc4360bae4f7a8bdead6dbfd0b5">LOGGER</a>.debug(<span class="stringliteral">&quot;Adding X-Forwarded-Proto to headerSDE&quot;</span>);</div>
-<div class="line"><span class="lineno">  121</span>            headerSDE.addSDParam(<span class="stringliteral">&quot;X-Forwarded-Proto&quot;</span>, this.<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a9593afd0e628d32ff5819d6d9087643d">xForwardedProto</a>.<a class="code hl_function" href="interfacecom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedProto.html#a43d7fb30c973c1c89906b9ac3b928e06">value</a>());</div>
-<div class="line"><span class="lineno">  122</span>        }</div>
-<div class="line"><span class="lineno">  123</span> </div>
-<div class="line"><span class="lineno">  124</span>        <span class="keywordflow">return</span> headerSDE;</div>
-<div class="line"><span class="lineno">  125</span>    }</div>
-<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo_html_a7b98ddc4360bae4f7a8bdead6dbfd0b5"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a7b98ddc4360bae4f7a8bdead6dbfd0b5">com.teragrep.cfe_16.bo.HeaderInfo.LOGGER</a></div><div class="ttdeci">static final Logger LOGGER</div><div class="ttdef"><b>Definition</b> <a href="HeaderInfo_8java_source.html#l00092">HeaderInfo.java:92</a></div></div>
+<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00110">110</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>                                   {</div>
+<div class="line"><span class="lineno">  111</span>        <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a7b98ddc4360bae4f7a8bdead6dbfd0b5">LOGGER</a>.debug(<span class="stringliteral">&quot;Setting Structured Data headers&quot;</span>);</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keyword">final</span> SDElement headerSDE = <span class="keyword">new</span> SDElement(<span class="stringliteral">&quot;cfe_16-origin@48577&quot;</span>);</div>
+<div class="line"><span class="lineno">  113</span> </div>
+<div class="line"><span class="lineno">  114</span>        <span class="keywordflow">if</span> (!this.<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#af46ec4b9013f4d272a3f3f6fdfb316d0">xForwardedFor</a>.<a class="code hl_function" href="interfacecom_1_1teragrep_1_1cfe__16_1_1Stubable.html#a8e854db1814eeb807cd9049776c33923">isStub</a>()) {</div>
+<div class="line"><span class="lineno">  115</span>            <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a7b98ddc4360bae4f7a8bdead6dbfd0b5">LOGGER</a>.debug(<span class="stringliteral">&quot;Adding X-Forwarded-For header to headerSDE&quot;</span>);</div>
+<div class="line"><span class="lineno">  116</span>            headerSDE.addSDParam(<span class="stringliteral">&quot;X-Forwarded-For&quot;</span>, this.<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#af46ec4b9013f4d272a3f3f6fdfb316d0">xForwardedFor</a>.<a class="code hl_function" href="interfacecom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedFor.html#a113b5e3c48eba97ef47b0dbcb64ef592">value</a>());</div>
+<div class="line"><span class="lineno">  117</span>        }</div>
+<div class="line"><span class="lineno">  118</span>        <span class="keywordflow">if</span> (!this.<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#aeabb7dd8d44099f078387667fa5d87dc">xForwardedHost</a>.<a class="code hl_function" href="interfacecom_1_1teragrep_1_1cfe__16_1_1Stubable.html#a8e854db1814eeb807cd9049776c33923">isStub</a>()) {</div>
+<div class="line"><span class="lineno">  119</span>            <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a7b98ddc4360bae4f7a8bdead6dbfd0b5">LOGGER</a>.debug(<span class="stringliteral">&quot;Adding X-Forwarder-Host to headerSDE&quot;</span>);</div>
+<div class="line"><span class="lineno">  120</span>            headerSDE.addSDParam(<span class="stringliteral">&quot;X-Forwarded-Host&quot;</span>, this.<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#aeabb7dd8d44099f078387667fa5d87dc">xForwardedHost</a>.<a class="code hl_function" href="interfacecom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedHost.html#af36e894a4b77acf609737e584479e182">value</a>());</div>
+<div class="line"><span class="lineno">  121</span>        }</div>
+<div class="line"><span class="lineno">  122</span>        <span class="keywordflow">if</span> (!this.<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a9593afd0e628d32ff5819d6d9087643d">xForwardedProto</a>.<a class="code hl_function" href="interfacecom_1_1teragrep_1_1cfe__16_1_1Stubable.html#a8e854db1814eeb807cd9049776c33923">isStub</a>()) {</div>
+<div class="line"><span class="lineno">  123</span>            <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a7b98ddc4360bae4f7a8bdead6dbfd0b5">LOGGER</a>.debug(<span class="stringliteral">&quot;Adding X-Forwarded-Proto to headerSDE&quot;</span>);</div>
+<div class="line"><span class="lineno">  124</span>            headerSDE.addSDParam(<span class="stringliteral">&quot;X-Forwarded-Proto&quot;</span>, this.<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a9593afd0e628d32ff5819d6d9087643d">xForwardedProto</a>.<a class="code hl_function" href="interfacecom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedProto.html#a43d7fb30c973c1c89906b9ac3b928e06">value</a>());</div>
+<div class="line"><span class="lineno">  125</span>        }</div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">return</span> headerSDE;</div>
+<div class="line"><span class="lineno">  128</span>    }</div>
+<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo_html_a7b98ddc4360bae4f7a8bdead6dbfd0b5"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a7b98ddc4360bae4f7a8bdead6dbfd0b5">com.teragrep.cfe_16.bo.HeaderInfo.LOGGER</a></div><div class="ttdeci">static final Logger LOGGER</div><div class="ttdef"><b>Definition</b> <a href="HeaderInfo_8java_source.html#l00095">HeaderInfo.java:95</a></div></div>
 <div class="ttc" id="ainterfacecom_1_1teragrep_1_1cfe__16_1_1Stubable_html_a8e854db1814eeb807cd9049776c33923"><div class="ttname"><a href="interfacecom_1_1teragrep_1_1cfe__16_1_1Stubable.html#a8e854db1814eeb807cd9049776c33923">com.teragrep.cfe_16.Stubable.isStub</a></div><div class="ttdeci">abstract boolean isStub()</div></div>
 <div class="ttc" id="ainterfacecom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedFor_html_a113b5e3c48eba97ef47b0dbcb64ef592"><div class="ttname"><a href="interfacecom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedFor.html#a113b5e3c48eba97ef47b0dbcb64ef592">com.teragrep.cfe_16.bo.XForwardedFor.value</a></div><div class="ttdeci">abstract String value()</div></div>
 <div class="ttc" id="ainterfacecom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedHost_html_af36e894a4b77acf609737e584479e182"><div class="ttname"><a href="interfacecom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedHost.html#af36e894a4b77acf609737e584479e182">com.teragrep.cfe_16.bo.XForwardedHost.value</a></div><div class="ttdeci">abstract String value()</div></div>
@@ -239,17 +243,17 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00128">128</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  128</span>                                    {</div>
-<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">if</span> (o == <span class="keyword">null</span> || getClass() != o.getClass()) {</div>
-<div class="line"><span class="lineno">  130</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  131</span>        }</div>
-<div class="line"><span class="lineno">  132</span> </div>
-<div class="line"><span class="lineno">  133</span>        <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#ab3fa314935c77656287fae50ab802ac8">HeaderInfo</a> that = (<a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#ab3fa314935c77656287fae50ab802ac8">HeaderInfo</a>) o;</div>
-<div class="line"><span class="lineno">  134</span>        <span class="keywordflow">return</span> Objects.equals(<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#af46ec4b9013f4d272a3f3f6fdfb316d0">xForwardedFor</a>, that.xForwardedFor) &amp;&amp; Objects.equals(<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#aeabb7dd8d44099f078387667fa5d87dc">xForwardedHost</a>, that.xForwardedHost)</div>
-<div class="line"><span class="lineno">  135</span>                &amp;&amp; Objects.equals(<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a9593afd0e628d32ff5819d6d9087643d">xForwardedProto</a>, that.xForwardedProto);</div>
-<div class="line"><span class="lineno">  136</span>    }</div>
-<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo_html_ab3fa314935c77656287fae50ab802ac8"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#ab3fa314935c77656287fae50ab802ac8">com.teragrep.cfe_16.bo.HeaderInfo.HeaderInfo</a></div><div class="ttdeci">HeaderInfo(final XForwardedFor xForwardedFor, final XForwardedHost xForwardedHost, final XForwardedProto xForwardedProto)</div><div class="ttdef"><b>Definition</b> <a href="HeaderInfo_8java_source.html#l00097">HeaderInfo.java:97</a></div></div>
+<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00131">131</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  131</span>                                    {</div>
+<div class="line"><span class="lineno">  132</span>        <span class="keywordflow">if</span> (o == <span class="keyword">null</span> || getClass() != o.getClass()) {</div>
+<div class="line"><span class="lineno">  133</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  134</span>        }</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>        <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#ab3fa314935c77656287fae50ab802ac8">HeaderInfo</a> that = (<a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#ab3fa314935c77656287fae50ab802ac8">HeaderInfo</a>) o;</div>
+<div class="line"><span class="lineno">  137</span>        <span class="keywordflow">return</span> Objects.equals(<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#af46ec4b9013f4d272a3f3f6fdfb316d0">xForwardedFor</a>, that.xForwardedFor) &amp;&amp; Objects.equals(<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#aeabb7dd8d44099f078387667fa5d87dc">xForwardedHost</a>, that.xForwardedHost)</div>
+<div class="line"><span class="lineno">  138</span>                &amp;&amp; Objects.equals(<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a9593afd0e628d32ff5819d6d9087643d">xForwardedProto</a>, that.xForwardedProto);</div>
+<div class="line"><span class="lineno">  139</span>    }</div>
+<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo_html_ab3fa314935c77656287fae50ab802ac8"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#ab3fa314935c77656287fae50ab802ac8">com.teragrep.cfe_16.bo.HeaderInfo.HeaderInfo</a></div><div class="ttdeci">HeaderInfo(final XForwardedFor xForwardedFor, final XForwardedHost xForwardedHost, final XForwardedProto xForwardedProto)</div><div class="ttdef"><b>Definition</b> <a href="HeaderInfo_8java_source.html#l00100">HeaderInfo.java:100</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -278,10 +282,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00139">139</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  139</span>                          {</div>
-<div class="line"><span class="lineno">  140</span>        <span class="keywordflow">return</span> Objects.hash(<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#af46ec4b9013f4d272a3f3f6fdfb316d0">xForwardedFor</a>, <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#aeabb7dd8d44099f078387667fa5d87dc">xForwardedHost</a>, <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a9593afd0e628d32ff5819d6d9087643d">xForwardedProto</a>);</div>
-<div class="line"><span class="lineno">  141</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00142">142</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  142</span>                          {</div>
+<div class="line"><span class="lineno">  143</span>        <span class="keywordflow">return</span> Objects.hash(<a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#af46ec4b9013f4d272a3f3f6fdfb316d0">xForwardedFor</a>, <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#aeabb7dd8d44099f078387667fa5d87dc">xForwardedHost</a>, <a class="code hl_variable" href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1HeaderInfo.html#a9593afd0e628d32ff5819d6d9087643d">xForwardedProto</a>);</div>
+<div class="line"><span class="lineno">  144</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -306,7 +310,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00092">92</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00095">95</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
 
 </div>
 </div>
@@ -330,7 +334,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00093">93</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00096">96</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
 
 </div>
 </div>
@@ -354,7 +358,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00094">94</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00097">97</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
 
 </div>
 </div>
@@ -378,7 +382,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00095">95</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="HeaderInfo_8java_source.html#l00098">98</a> of file <a class="el" href="HeaderInfo_8java_source.html">HeaderInfo.java</a>.</p>
 
 </div>
 </div>
