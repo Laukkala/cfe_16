@@ -58,7 +58,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
+
 /**
+ * spotless:off
  * @class HECRestController
  * @responsibilities
  *        - Implements REST API endpoints.
@@ -72,6 +74,7 @@ import org.springframework.web.bind.annotation.*;
  *
  * }
  * @enduml
+ * spotless:on
  */
 @RestController
 @RequestMapping("/")

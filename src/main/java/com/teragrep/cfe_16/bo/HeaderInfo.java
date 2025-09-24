@@ -51,6 +51,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * spotless:off
  * @class HeaderInfo
  * @brief headerInfo provides information about HTTP headers as Syslog Element
  *
@@ -92,6 +93,7 @@ import org.slf4j.LoggerFactory;
  * end note
  *
  * @enduml
+ * spotless:on
  */
 public final class HeaderInfo {
 
