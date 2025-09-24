@@ -94,7 +94,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedForStub.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedForStub.html" target="_top" xlink:title="XForwardedForStub tells others that the optional HTTP header was not found.">
 <polygon fill="white" stroke="#666666" points="643,-222 450,-222 450,-192 643,-192 643,-222"/>
 <text text-anchor="start" x="458" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00">com.teragrep.cfe_16.bo.XForwarded</text>
 <text text-anchor="middle" x="546.5" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00">ForStub</text>
@@ -132,7 +132,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedHostStub.html" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedHostStub.html" target="_top" xlink:title="XForwardedHostStub tells others that the optional HTTP header was not found.">
 <polygon fill="white" stroke="#666666" points="643,-126 450,-126 450,-96 643,-96 643,-126"/>
 <text text-anchor="start" x="458" y="-114" font-family="Helvetica,sans-Serif" font-size="10.00">com.teragrep.cfe_16.bo.XForwarded</text>
 <text text-anchor="middle" x="546.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">HostStub</text>
@@ -170,7 +170,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedProtoStub.html" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedProtoStub.html" target="_top" xlink:title="XForwardedProtoStub tells others that the optional HTTP header was not found.">
 <polygon fill="white" stroke="#666666" points="643,-30 450,-30 450,0 643,0 643,-30"/>
 <text text-anchor="start" x="458" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">com.teragrep.cfe_16.bo.XForwarded</text>
 <text text-anchor="middle" x="546.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ProtoStub</text>

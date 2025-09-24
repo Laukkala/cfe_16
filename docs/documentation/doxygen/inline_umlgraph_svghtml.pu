@@ -46,6 +46,7 @@ XForwardedForImpl --> HeaderInfo : Value of the HTTP header
 note right of XForwardedForImpl
 Responsibilities:
 - Provide value of the HTTP header
+- Tell others that it is not a stub object
 
 Collaborators:
 - HeaderInfo
@@ -53,6 +54,24 @@ Collaborators:
 end note
 @enduml
 @startuml inline_umlgraph_5.svg
+class XForwardedForStub {
+  + isStub()
+  + value()
+}
+
+XForwardedForStub --> HeaderInfo : Tell that it is a stub
+
+note right of XForwardedForStub
+Responsibilities:
+- Throw an exception if value is asked for
+- Tell others that it is a stub object
+
+Collaborators:
+- HeaderInfo
+
+end note
+@enduml
+@startuml inline_umlgraph_6.svg
 class XForwardedHostImpl {
   + isStub()
   + value()
@@ -63,13 +82,32 @@ XForwardedHostImpl --> HeaderInfo : Value of the HTTP header
 note right of XForwardedHostImpl
 Responsibilities:
 - Provide value of the HTTP header
+- Tell others that it is not a stub object
 
 Collaborators:
 - HeaderInfo
 
 end note
 @enduml
-@startuml inline_umlgraph_6.svg
+@startuml inline_umlgraph_7.svg
+class XForwardedHostStub {
+  + isStub()
+  + value()
+}
+
+XForwardedHostStub --> HeaderInfo : Tell that it is a stub
+
+note right of XForwardedHostStub
+Responsibilities:
+- Throw an exception if value is asked for
+- Tell others that it is a stub object
+
+Collaborators:
+- HeaderInfo
+
+end note
+@enduml
+@startuml inline_umlgraph_8.svg
 class XForwardedProtoImpl {
   + isStub()
   + value()
@@ -80,13 +118,32 @@ XForwardedProtoImpl --> HeaderInfo : Value of the HTTP header
 note right of XForwardedProtoImpl
 Responsibilities:
 - Provide value of the HTTP header
+- Tell others that it is not a stub object
 
 Collaborators:
 - HeaderInfo
 
 end note
 @enduml
-@startuml inline_umlgraph_7.svg
+@startuml inline_umlgraph_9.svg
+class XForwardedProtoStub {
+  + isStub()
+  + value()
+}
+
+XForwardedProtoStub --> HeaderInfo : Tell that it is a stub
+
+note right of XForwardedProtoStub
+Responsibilities:
+- Throw an exception if value is asked for
+- Tell others that it is a stub object
+
+Collaborators:
+- HeaderInfo
+
+end note
+@enduml
+@startuml inline_umlgraph_10.svg
 class HECRestController {
   + sendEvents()
   + sendEvents()
@@ -118,7 +175,7 @@ Collaborators:
 - HECService
 end note
 @enduml
-@startuml inline_umlgraph_8.svg
+@startuml inline_umlgraph_11.svg
 interface HECService {
     sendEvents()
     getAcks()

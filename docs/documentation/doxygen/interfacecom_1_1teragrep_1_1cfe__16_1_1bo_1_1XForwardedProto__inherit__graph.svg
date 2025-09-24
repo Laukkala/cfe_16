@@ -40,7 +40,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedProtoStub.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classcom_1_1teragrep_1_1cfe__16_1_1bo_1_1XForwardedProtoStub.html" target="_top" xlink:title="XForwardedProtoStub tells others that the optional HTTP header was not found.">
 <polygon fill="white" stroke="#666666" points="621,-30 428,-30 428,0 621,0 621,-30"/>
 <text text-anchor="start" x="436" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">com.teragrep.cfe_16.bo.XForwarded</text>
 <text text-anchor="middle" x="524.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ProtoStub</text>
