@@ -100,12 +100,10 @@ Private Member Functions</h2></td></tr>
 </dd></dl>
 <dl class="section user"><dt>Collaborators:</dt><dd><div class="plantumlgraph">
 <object type="image/svg+xml" data="inline_umlgraph_2.svg"></object>
-<div class="caption">
-class RequestBodyCleaner {</div>
 </div>
  </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="RequestBodyCleaner_8java_source.html#l00080">80</a> of file <a class="el" href="RequestBodyCleaner_8java_source.html">RequestBodyCleaner.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RequestBodyCleaner_8java_source.html#l00081">81</a> of file <a class="el" href="RequestBodyCleaner_8java_source.html">RequestBodyCleaner.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8c50916e2c909c0572f6ede5759bb716" name="a8c50916e2c909c0572f6ede5759bb716"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c50916e2c909c0572f6ede5759bb716">&#9670;&#160;</a></span>cleanAckRequestBody()</h2>
@@ -133,19 +131,19 @@ class RequestBodyCleaner {</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RequestBodyCleaner_8java_source.html#l00082">82</a> of file <a class="el" href="RequestBodyCleaner_8java_source.html">RequestBodyCleaner.java</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>                                                                   {</div>
-<div class="line"><span class="lineno">   83</span>        String bodyWithoutChannel = body.replaceAll(<span class="stringliteral">&quot;channel=\\[&quot;</span> + Pattern.quote(channel) + <span class="stringliteral">&quot;\\]\\, &quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">   84</span>        String bodywithoutChannelLastCharRemoved = <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9d4bd53181a791719c7da3729cc72f7f">removeLastChar</a>(bodyWithoutChannel);</div>
-<div class="line"><span class="lineno">   85</span> </div>
-<div class="line"><span class="lineno">   86</span>        String cleanedBody = bodywithoutChannelLastCharRemoved.substring(1);</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span>        cleanedBody = <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9b772b8ac07b66a3440a00f2b7ecf627">removeEqualsArrayFromEnd</a>(cleanedBody);</div>
-<div class="line"><span class="lineno">   89</span> </div>
-<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">return</span> cleanedBody;</div>
-<div class="line"><span class="lineno">   91</span>    }</div>
-<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner_html_a9b772b8ac07b66a3440a00f2b7ecf627"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9b772b8ac07b66a3440a00f2b7ecf627">com.teragrep.cfe_16.RequestBodyCleaner.removeEqualsArrayFromEnd</a></div><div class="ttdeci">String removeEqualsArrayFromEnd(String str)</div><div class="ttdef"><b>Definition</b> <a href="RequestBodyCleaner_8java_source.html#l00097">RequestBodyCleaner.java:97</a></div></div>
-<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner_html_a9d4bd53181a791719c7da3729cc72f7f"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9d4bd53181a791719c7da3729cc72f7f">com.teragrep.cfe_16.RequestBodyCleaner.removeLastChar</a></div><div class="ttdeci">String removeLastChar(String str)</div><div class="ttdef"><b>Definition</b> <a href="RequestBodyCleaner_8java_source.html#l00093">RequestBodyCleaner.java:93</a></div></div>
+<p class="definition">Definition at line <a class="el" href="RequestBodyCleaner_8java_source.html#l00083">83</a> of file <a class="el" href="RequestBodyCleaner_8java_source.html">RequestBodyCleaner.java</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>                                                                   {</div>
+<div class="line"><span class="lineno">   84</span>        String bodyWithoutChannel = body.replaceAll(<span class="stringliteral">&quot;channel=\\[&quot;</span> + Pattern.quote(channel) + <span class="stringliteral">&quot;\\]\\, &quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">   85</span>        String bodywithoutChannelLastCharRemoved = <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9d4bd53181a791719c7da3729cc72f7f">removeLastChar</a>(bodyWithoutChannel);</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span>        String cleanedBody = bodywithoutChannelLastCharRemoved.substring(1);</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>        cleanedBody = <a class="code hl_function" href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9b772b8ac07b66a3440a00f2b7ecf627">removeEqualsArrayFromEnd</a>(cleanedBody);</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>        <span class="keywordflow">return</span> cleanedBody;</div>
+<div class="line"><span class="lineno">   92</span>    }</div>
+<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner_html_a9b772b8ac07b66a3440a00f2b7ecf627"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9b772b8ac07b66a3440a00f2b7ecf627">com.teragrep.cfe_16.RequestBodyCleaner.removeEqualsArrayFromEnd</a></div><div class="ttdeci">String removeEqualsArrayFromEnd(String str)</div><div class="ttdef"><b>Definition</b> <a href="RequestBodyCleaner_8java_source.html#l00098">RequestBodyCleaner.java:98</a></div></div>
+<div class="ttc" id="aclasscom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner_html_a9d4bd53181a791719c7da3729cc72f7f"><div class="ttname"><a href="classcom_1_1teragrep_1_1cfe__16_1_1RequestBodyCleaner.html#a9d4bd53181a791719c7da3729cc72f7f">com.teragrep.cfe_16.RequestBodyCleaner.removeLastChar</a></div><div class="ttdeci">String removeLastChar(String str)</div><div class="ttdef"><b>Definition</b> <a href="RequestBodyCleaner_8java_source.html#l00094">RequestBodyCleaner.java:94</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -183,10 +181,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RequestBodyCleaner_8java_source.html#l00097">97</a> of file <a class="el" href="RequestBodyCleaner_8java_source.html">RequestBodyCleaner.java</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   97</span>                                                        {</div>
-<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">return</span> str.replace(<span class="stringliteral">&quot;=[]&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">   99</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="RequestBodyCleaner_8java_source.html#l00098">98</a> of file <a class="el" href="RequestBodyCleaner_8java_source.html">RequestBodyCleaner.java</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   98</span>                                                        {</div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">return</span> str.replace(<span class="stringliteral">&quot;=[]&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">  100</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -219,10 +217,10 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RequestBodyCleaner_8java_source.html#l00093">93</a> of file <a class="el" href="RequestBodyCleaner_8java_source.html">RequestBodyCleaner.java</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   93</span>                                              {</div>
-<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">return</span> str.substring(0, str.length() - 1);</div>
-<div class="line"><span class="lineno">   95</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="RequestBodyCleaner_8java_source.html#l00094">94</a> of file <a class="el" href="RequestBodyCleaner_8java_source.html">RequestBodyCleaner.java</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>                                              {</div>
+<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> str.substring(0, str.length() - 1);</div>
+<div class="line"><span class="lineno">   96</span>    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
