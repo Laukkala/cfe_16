@@ -50,8 +50,38 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.ResponseEntity;
 
+// spotless:off
 /**
- * An interface that specified the REST back end API.
+ * @class HECService
+ * @brief An interface that specified the REST back end API.
+ * @responsibilities
+ *        - Defines interface for functionality of HECRestController endpoints
+ *        - Defines interface for a health check
+ *        - Defines interface for getting Acks for a Channel
+ * @collaborators
+ *        - HECServiceImpl
+ * @startuml class HECService {
+ *     sendEvents()
+ *     getAcks()
+ *     healthCheck()
+ * }
+ *
+ * HECRestController --> HECService : Sends formatted Requests
+ * HECService --> HECServiceImpl : Implements interface
+ *
+ * note right of HECService
+ * Responsibilities:
+ *        - Defines interface for functionality of HECRestController endpoints
+ *        - Defines interface for a health check
+ *        - Defines interface for getting Acks for a Channel
+ *
+ * Collaborators:
+ * - HECServiceImpl
+ * end note
+ * @enduml
+ */
+
+/**
  */
 public interface HECService {
 
