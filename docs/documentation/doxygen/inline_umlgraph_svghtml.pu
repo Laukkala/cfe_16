@@ -2,3 +2,6 @@
           addAck() + isAckAcknowledged() + getRequestedAckStatuses() + deleteAckFromList() + run() + getAckListSize()
           + getAckList() + getCurrentAckValue() }
 @enduml
+@startuml inline_umlgraph_2.svg
+          fluffy Collaborators: - Cat end note
+@enduml
