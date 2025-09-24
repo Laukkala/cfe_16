@@ -58,7 +58,21 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
-
+/**
+ * @class HECRestController
+ * @responsibilities
+ *        - Implements REST API endpoints.
+ *        - Accepts HTTPServlet reqeuests.
+ *        - Cleans Requests via RequestBodyCleaner and delegates them to HECService
+ *        - Logs the time elapsed while handling requests.
+ * @collaborators
+ *        - RequestBodyCleaner
+ *        - HECService
+ * @startuml class HECRestController {
+ *
+ * }
+ * @enduml
+ */
 @RestController
 @RequestMapping("/")
 public class HECRestController {
