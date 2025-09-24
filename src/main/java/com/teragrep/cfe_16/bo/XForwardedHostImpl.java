@@ -47,6 +47,33 @@ package com.teragrep.cfe_16.bo;
 
 import java.util.Objects;
 
+// spotless:off
+/**
+ * @class XForwardedHostImpl
+ * @brief XForwardedHostImpl provides information about an HTTP header called "xForwardedHost"
+ *
+ * @collaborators
+ * - HeaderInfo
+ *
+ * @startuml
+ * class XForwardedHostImpl {
+ *   + isStub()
+ * }
+ *
+ * XForwardedHostImpl --> HeaderInfo : Value of the HTTP header
+ *
+ * note right of XForwardedHostImpl
+ * Responsibilities:
+ * - Provide value of the HTTP header
+ *
+ * Collaborators:
+ * - HeaderInfo
+ *
+ * end note
+ *
+ * @enduml
+ */
+// spotless:on
 public final class XForwardedHostImpl implements XForwardedHost {
 
     private final String headerValue;
