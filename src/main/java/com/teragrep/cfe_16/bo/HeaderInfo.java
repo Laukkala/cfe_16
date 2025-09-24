@@ -72,24 +72,16 @@ import org.slf4j.LoggerFactory;
  * XForwardedHost --> HeaderInfo : Information about this HTTP header
  * XForwardedProto --> HeaderInfo : Information about this HTTP header
  *
- * note right of XForwardedFor
- * Collaborators:
- * - Cat
- * end note
+ * note right of HeaderInfo
+ * Responsibilities:
+ * - Provide SDElement of HTTP headers
  *
- * note right of XForwardedHost
  * Collaborators:
- * - Cat
- * end note
+ * - XForwardedFor
+ * - XForwardedHosts
+ * - XForwardedProto
+ * - SDElement
  *
- * note right of XForwardedProto
- * Collaborators:
- * - Cat
- * end note
- *
- * Responsibilities: - Very fluffy
- * Collaborators:
- * - Cat
  * end note
  *
  * @enduml
