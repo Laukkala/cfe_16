@@ -1,6 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" href="$interfacecom_1_1teragrep_1_1cfe__16_1_1LifeCycle.html" title="An interface that own resources like threads for doing graceful shutdown." alt="" coords="5,27,189,67"/>
-<area shape="rect" id="Node000001" href="$classcom_1_1teragrep_1_1cfe__16_1_1Acknowledgements.html" title=" " alt="" coords="237,5,525,31"/>
+<area shape="rect" id="Node000001" href="$classcom_1_1teragrep_1_1cfe__16_1_1Acknowledgements.html" title="Handles the acknowledgement statuses of the sent events (acks)." alt="" coords="237,5,525,31"/>
 <area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="203,34,258,28,258,33,203,39"/>
 <area shape="rect" id="Node000003" href="$classcom_1_1teragrep_1_1cfe__16_1_1SessionManager.html" title=" " alt="" coords="276,55,487,95"/>
 <area shape="poly" id="edge8_Node000000_Node000003" title=" " alt="" coords="204,55,276,62,275,68,203,60"/>

@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classcom_1_1teragrep_1_1cfe__16_1_1Acknowledgements.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classcom_1_1teragrep_1_1cfe__16_1_1Acknowledgements.html" target="_top" xlink:title="Handles the acknowledgement statuses of the sent events (acks).">
 <polygon fill="white" stroke="#666666" points="216,-101.5 0,-101.5 0,-82.5 216,-82.5 216,-101.5"/>
 <text text-anchor="middle" x="108" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">com.teragrep.cfe_16.Acknowledgements</text>
 </a>

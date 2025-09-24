@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Implementation of the REST Service back end." alt="" coords="707,127,917,167"/>
 <area shape="rect" id="Node000002" href="$interfacecom_1_1teragrep_1_1cfe__16_1_1service_1_1HECService.html" title="An interface that specified the REST back end API." alt="" coords="277,5,488,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="502,43,592,62,684,88,771,124,769,129,682,93,590,68,501,48"/>
-<area shape="rect" id="Node000003" href="$classcom_1_1teragrep_1_1cfe__16_1_1Acknowledgements.html" title=" " alt="" coords="239,134,527,159"/>
+<area shape="rect" id="Node000003" href="$classcom_1_1teragrep_1_1cfe__16_1_1Acknowledgements.html" title="Handles the acknowledgement statuses of the sent events (acks)." alt="" coords="239,134,527,159"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="540,144,707,144,707,149,540,149"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="56,75,139,101"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="153,99,239,119,305,131,304,137,238,124,151,104"/>
