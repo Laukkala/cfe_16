@@ -71,7 +71,19 @@ import org.springframework.web.bind.annotation.*;
  *        - RequestBodyCleaner
  *        - HECService
  * @startuml class HECRestController {
- *
+ *        + sendEvents()
+ *        + sendEvents()
+ *        + getAcksWithPostMethod()
+ *        + getAcks()
+ *        + sendEventsWithFormatOption()
+ *        + sendEventsWithFormatOption()
+ *        + sendEventsWithProtocolVersion()
+ *        + getHealth()
+ *        + getHealthWithProtocolVersion()
+ *        + sendMintData()
+ *        + sendMintDataWithProtocolVersion()
+ *        + sendRawData()
+ *        + sendRawDataWithProtocolVersion()
  * }
  *
  * HECRestController --> HECService : Delegation of requests
