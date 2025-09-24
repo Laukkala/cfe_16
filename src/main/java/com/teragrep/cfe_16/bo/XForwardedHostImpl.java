@@ -58,6 +58,7 @@ import java.util.Objects;
  * @startuml
  * class XForwardedHostImpl {
  *   + isStub()
+ *   + value()
  * }
  *
  * XForwardedHostImpl --> HeaderInfo : Value of the HTTP header
