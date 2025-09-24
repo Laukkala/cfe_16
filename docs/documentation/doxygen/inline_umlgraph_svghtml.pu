@@ -3,5 +3,36 @@
           + getAckList() + getCurrentAckValue() }
 @enduml
 @startuml inline_umlgraph_2.svg
-          fluffy Collaborators: - Cat end note
+class HeaderInfo {
+  + asSDElement()
+}
+
+HeaderInfo --> Converter : SDElement of HTTP headers
+
+XForwardedFor --> HeaderInfo : Information about this HTTP header
+XForwardedHost --> HeaderInfo : Information about this HTTP header
+XForwardedProto --> HeaderInfo : Information about this HTTP header
+
+note right of XForwardedFor
+Collaborators:
+- Cat
+end note
+
+note right of XForwardedHost
+Collaborators:
+- Cat
+end note
+
+note right of XForwardedProto
+Collaborators:
+- Cat
+end note
+
+Responsibilities: - Very fluffy
+Collaborators:
+- Cat
+end note
+@enduml
+@startuml inline_umlgraph_3.svg
+}
 @enduml
