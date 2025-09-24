@@ -57,6 +57,25 @@ import java.util.regex.Pattern;
  * TODO: Try to implement a better way to get the body of the request.
  *
  */
+
+// spotless:off
+/**
+ * @class RequestBodyCleaner
+ * @responsibilities
+ *        - Formats bodies of Requests by removing channel field
+ * @collaborators
+ * @startuml class RequestBodyCleaner {
+ *   + cleanAckRequestBody(String body, String channel)
+ * }
+ *
+ * note right of RequestBodyCleaner
+ * Responsibilities:
+ * - Formats bodies of Requests by removing channel field
+ * Collaborators:
+ * end note
+ * @enduml
+ */
+// spotless:on
 @Component
 public class RequestBodyCleaner {
 
