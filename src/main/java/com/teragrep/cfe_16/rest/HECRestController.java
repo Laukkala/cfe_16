@@ -59,8 +59,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 
+// spotless:off
 /**
- * spotless:off
  * @class HECRestController
  * @responsibilities
  *        - Implements REST API endpoints.
@@ -74,8 +74,8 @@ import org.springframework.web.bind.annotation.*;
  *
  * }
  * @enduml
- * spotless:on
  */
+// spotless:on
 @RestController
 @RequestMapping("/")
 public class HECRestController {

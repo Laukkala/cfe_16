@@ -50,8 +50,8 @@ import java.util.Objects;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+// spotless:off
 /**
- * spotless:off
  * @class HeaderInfo
  * @brief headerInfo provides information about HTTP headers as Syslog Element
  *
@@ -93,8 +93,8 @@ import org.slf4j.LoggerFactory;
  * end note
  *
  * @enduml
- * spotless:on
  */
+// spotless:on
 public final class HeaderInfo {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(HeaderInfo.class);
