@@ -55,6 +55,9 @@ import org.slf4j.LoggerFactory;
  * @class HeaderInfo
  * @brief headerInfo provides information about HTTP headers as Syslog Element
  *
+ * @responsibilities
+ * - Provide a Syslog Element of HTTP headers
+ *
  * @collaborators
  * - XForwardedFor
  * - XForwardedHost

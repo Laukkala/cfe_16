@@ -52,6 +52,10 @@ import java.util.Objects;
  * @class XForwardedForImpl
  * @brief XForwardedForImpl provides information about an HTTP header called "xForwardedFor"
  *
+ * @responsibilities
+ * - Provide value of an HTTP header called "xForwardedFor"
+ * - Tell others that it is not a stub object
+ *
  * @collaborators
  * - HeaderInfo
  *
