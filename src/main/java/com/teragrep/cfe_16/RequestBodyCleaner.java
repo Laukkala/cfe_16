@@ -64,7 +64,8 @@ import java.util.regex.Pattern;
  * @responsibilities
  *        - Formats bodies of Requests by removing channel field
  * @collaborators
- * @startuml class RequestBodyCleaner {
+ * @startuml
+ * class RequestBodyCleaner {
  *   + cleanAckRequestBody(String body, String channel)
  * }
  *
