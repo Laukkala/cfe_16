@@ -52,10 +52,45 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @class HeaderInfo
- * @brief headerInfo provides information about HTTP headers
- * @collaborators - XForwardedFor - XForwardedHost - XForwardedProto
- * @startuml class HeaderInfo { + asSDElement() } Dog --> Cat : fluffiness note right of Dog Responsibilities: - Very
- *           fluffy Collaborators: - Cat end note
+ * @brief headerInfo provides information about HTTP headers as Syslog Element
+ *
+ * @collaborators
+ * - XForwardedFor
+ * - XForwardedHost
+ * - XForwardedProto
+ * - SDElement
+ *
+ * @startuml
+ * class HeaderInfo {
+ *   + asSDElement()
+ * }
+ *
+ * HeaderInfo --> Converter : SDElement of HTTP headers
+ *
+ * XForwardedFor --> HeaderInfo : Information about this HTTP header
+ * XForwardedHost --> HeaderInfo : Information about this HTTP header
+ * XForwardedProto --> HeaderInfo : Information about this HTTP header
+ *
+ * note right of XForwardedFor
+ * Collaborators:
+ * - Cat
+ * end note
+ *
+ * note right of XForwardedHost
+ * Collaborators:
+ * - Cat
+ * end note
+ *
+ * note right of XForwardedProto
+ * Collaborators:
+ * - Cat
+ * end note
+ *
+ * Responsibilities: - Very fluffy
+ * Collaborators:
+ * - Cat
+ * end note
+ *
  * @enduml
  */
 public final class HeaderInfo {
