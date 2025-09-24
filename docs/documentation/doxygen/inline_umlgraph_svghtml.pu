@@ -36,6 +36,19 @@ Collaborators:
 end note
 @enduml
 @startuml inline_umlgraph_4.svg
+       + sendEvents()
+       + sendEvents()
+       + getAcksWithPostMethod()
+       + getAcks()
+       + sendEventsWithFormatOption()
+       + sendEventsWithFormatOption()
+       + sendEventsWithProtocolVersion()
+       + getHealth()
+       + getHealthWithProtocolVersion()
+       + sendMintData()
+       + sendMintDataWithProtocolVersion()
+       + sendRawData()
+       + sendRawDataWithProtocolVersion()
 }
 
 HECRestController --> HECService : Delegation of requests
