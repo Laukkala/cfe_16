@@ -36,6 +36,57 @@ Collaborators:
 end note
 @enduml
 @startuml inline_umlgraph_4.svg
+class XForwardedForImpl {
+  + isStub()
+  + value()
+}
+
+XForwardedForImpl --> HeaderInfo : Value of the HTTP header
+
+note right of XForwardedForImpl
+Responsibilities:
+- Provide value of the HTTP header
+
+Collaborators:
+- HeaderInfo
+
+end note
+@enduml
+@startuml inline_umlgraph_5.svg
+class XForwardedHostImpl {
+  + isStub()
+  + value()
+}
+
+XForwardedHostImpl --> HeaderInfo : Value of the HTTP header
+
+note right of XForwardedHostImpl
+Responsibilities:
+- Provide value of the HTTP header
+
+Collaborators:
+- HeaderInfo
+
+end note
+@enduml
+@startuml inline_umlgraph_6.svg
+class XForwardedProtoImpl {
+  + isStub()
+  + value()
+}
+
+XForwardedProtoImpl --> HeaderInfo : Value of the HTTP header
+
+note right of XForwardedProtoImpl
+Responsibilities:
+- Provide value of the HTTP header
+
+Collaborators:
+- HeaderInfo
+
+end note
+@enduml
+@startuml inline_umlgraph_7.svg
        + sendEvents()
        + sendEvents()
        + getAcksWithPostMethod()
