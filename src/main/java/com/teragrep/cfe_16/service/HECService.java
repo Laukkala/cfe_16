@@ -60,7 +60,8 @@ import org.springframework.http.ResponseEntity;
  *        - Defines interface for getting Acks for a Channel
  * @collaborators
  *        - HECServiceImpl
- * @startuml class HECService {
+ * @startuml
+ * interface HECService {
  *     sendEvents()
  *     getAcks()
  *     healthCheck()
